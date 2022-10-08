@@ -90,10 +90,6 @@ a.WIL:active:after {
     z-index: 5;
 }
 
-.popup-wrap li {
-    padding: 5px;
-}
-
 .page__text.active {
     opacity: 0.9;
     pointer-events: all;
