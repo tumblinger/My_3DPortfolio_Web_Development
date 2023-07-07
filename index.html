@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger and Page Sections Navigation in JS</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <a href="#" class="header__logo"><img src="img/LOGO.png" alt=""></a>
+                <div class="header__menu menu">
+                    <div class="menu__icon"><span></span></div>
+                    <nav class="menu__body">
+                        <ul class="menu__list">
+                            <li><a data-goto=".page__section_1" class="menu__link">Game Dev</a></li>
+                            <li><a data-goto=".page__section_2" class="menu__link">My 3d Works</a></li>
+                            <li><a data-goto=".page__section_3" class="menu__link">My 3d Programs</a></li>
+                            <li><a data-goto=".page__section_4" class="menu__link">Animation</a></li>
+                            <li><a data-goto=".page__section_5" class="menu__link">Contact me</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <section class="page__section page__section_1">
+            <div class="page__video">
+                <div class="page__body">
+                    <div class="mainTitle">
+                        <h1>My Portfolio</h1>
+                        <p>3D</p>
+                    </div>
+                    <!-- popup button -->
+                    <div class="popup-btn">
+                        <a href="#" class="WIL">What I've learnt</a>
+                    </div>
+                    <div class="page__video_title">Game Dev / Animations in Unreal Engine</div>
+                    <div class="page__video_text"> Virtual walks and Interactive tours for realtors, interior and
+                        exterior
+                        designers,
+                        or
+                        investors
+                    </div>
+                </div>
+                <video preload="auto" autoplay muted loop class="video__item">
+                    <source src="videos/Game.webm" type="video/webm">
+                    <source src="videos/Game.mp4" type="video/mp4">
+            </div>
+            <!-- Popup Window -->
+            <div class="page__text">
+                <img src="img/close.png" alt="close" class="popup-closeBtn" width="35" height="35">
+                <div class="popup-wrap">
+
+                    <p>During the work on this project I've learnt:</p>
+                    <ul>
+                        <li>The basics of the Unreal Engine</li>
+                        <li>How to prepare models for further importing them into the engine</li>
+                        <li>Work on the Unreal Engine Landscape</li>
+                        <li>Set up and work on lighting</li>
+                        <li>Camera animation</li>
+                        <li>Introduction to the Adobe After Effects program</li>
+                        <li> The features of creating projects for Oculus Rift DK2, Oculus CV1 or HTC VIVE virtual
+                            reality
+                            helmets.</li>
+                        <li>How to create a game level</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="page__section page__section_2">
+            <h2 class="page__subtitle">My 3D Works</h2>
+            <div class="page__slider">
+                <!-- Slider: -->
+                <div class="swiper image-slider">
+                    <div class="swiper-wrapper image-slider__wrapper">
+                        <div class="swiper-slide image-slider__slide">
+                            <div class="image-slider__image swiper-zoom-container"><img src="img/03.jpg"
+                                    alt="kitchen img"></div>
+                        </div>
+                        <div class="swiper-slide image-slider__slide">
+                            <div class="image-slider__image swiper-zoom-container"><img src="img/4.jpg"
+                                    alt="buildings img"></div>
+                        </div>
+                        <div class="swiper-slide image-slider__slide">
+                            <div class="image-slider__image swiper-zoom-container"><img src="img/07.jpg"
+                                    alt="stool img"></div>
+                        </div>
+                        <div class="swiper-slide image-slider__slide">
+                            <div class="image-slider__image swiper-zoom-container"><img src="img/06.jpg"
+                                    alt="classroom img"></div>
+                        </div>
+                        <div class="swiper-slide image-slider__slide">
+                            <div class="image-slider__image swiper-zoom-container"><img src="img/08.jpg"
+                                    alt="fruits img"></div>
+                        </div>
+                        <div class="swiper-slide image-slider__slide">
+                            <div class="image-slider__image swiper-zoom-container"><img src="img/10.png"
+                                    alt="zbrush img"></div>
+                        </div>
+                        <div class="swiper-slide image-slider__slide">
+                            <div class="image-slider__image swiper-zoom-container"><img src="img/05.jpg"
+                                    alt="patephon img"></div>
+                        </div>
+                    </div>
+                    <!-- Arrows Navigation: -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <!-- Pagination: -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Scroll bar: -->
+                    <!-- <div class="swiper-scrollbar"></div> -->
+                    <div class="portfolio__link-btn popup-btn">
+                        <a href="https://egorovavalentina.wordpress.com/myportfolio/" target="_blank" class="WIL">Visit
+                            my website </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <section class="page__section page__section_3">
+        <h2 class="page__subtitle">The programs ... </h2>
+        <span class="prog">... I have learnt during my course on 3D visualisation and gaming</span>
+
+        <div class="page__gallery">
+
+            <div class="page__gallery-items">
+                <div class="card">
+                    <div class="img-container">
+                        <img src="logos/3dsmax.jpg" alt="" />
+                    </div>
+                    <div class="card-details">
+                        <h2>3Ds Max</h2>
+                        <p>3d scene modeling begins with the 3d Max.
+                            I learned how to model, create realistic renderers, and process the render in Photoshop to
+                            get a better picture. I can work in 3D modeling and visualization, with materials, lighting,
+                            and modeling in size and exact accordance with drawings or photographs.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img-container">
+                        <img src="logos/Megascan.png" alt="" />
+                    </div>
+                    <div class="card-details">
+                        <h2> Megascans</h2>
+                        <p>Quixel Megascans are photorealistic high-resolution scans of real-world scenes and objects. I
+                            learned how to create small architectural forms, landscapes, and plants of any complexity,
+                            seamless textures, normal-bumps, and displays in the works, as well as set up compositional
+                            lighting. </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img-container">
+                        <img src="logos/arch.jpg" alt="arch">
+                    </div>
+                    <div class="card-details">
+                        <h2>ArchiCAD</h2>
+                        <p>To start modeling in 3d, you need to prepare drawings. I have learned and used ArchiCAD and
+                            AutoCAD programs for this purpose. </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img-container">
+                        <img src="logos/illustrator.png" alt="3dmax">
+                    </div>
+                    <div class="card-details">
+                        <h2>Illustrator</h2>
+                        <p>In Adobe Illustrator, I made illustrations, which I also used for animations. In this editor,
+                            we can create advertising layouts and use the capabilities of the program to create images.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img-container">
+                        <img src="logos/ue.jpg" alt="3dmax">
+                    </div>
+                    <div class="card-details">
+                        <h2>Unreal Engine</h2>
+                        <p>I studied the Unreal Engine game engine and the animation capabilities of 3Ds Max
+                            (architectural animation). I created a game level, set up a character and animation
+                            sequences, taught the specifics of creating projects for Oculus or HTC VIVE virtual reality
+                            helmets. </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img-container">
+                        <img src="logos/zbrush.jpg" alt="zbrushs">
+                    </div>
+                    <div class="card-details">
+                        <h2>ZBrush</h2>
+                        <p>I have mastered retopology in 3Ds Max, learned how to sculpt in ZBrush to create high-quality
+                            scans for any objects and produce complex texturing in real-time programs such as Substance
+                            Painter. I've studied all the stages of creating a game character and learned various
+                            renderings in real-time.</p>
+                    </div>
+                </div>
+
+            </div>
+            <a target="_blank" class="progs__more-link" href="https://tumblinger.github.io/double-slider/">See more</a>
+        </div>
+    </section>
+
+    <section class="page__section page__section_4">
+        <h2 class="page__subtitle">Animations</h2>
+        <div class="video__gallery">
+            <div class="video__gallery-items">
+                <div class="items__body">
+                    <div class="item__video">
+                        <video preload="auto" autoplay muted loop class="video__item">
+                            <source src="videos/africa.webm" type="video/webm">
+                            <source src="videos/africa.avi" type="video/avi">
+                    </div>
+                    <div class="item__video">
+                        <video preload="auto" autoplay muted loop class="video__item">
+                            <source src="videos/cup.webm" type="video/webm">
+                            <source src="videos/cup.avi" type="video/avi">
+                    </div>
+
+                    <div class="item__video">
+                        <video preload="auto" autoplay muted loop class="video__item">
+                            <source src="videos/Fashion.webm" type="video/webm">
+                            <source src="videos/Fashion.avi" type="video/avi">
+                    </div>
+
+                    <div class="item__video">
+                        <video preload="auto" autoplay muted loop class="video__item">
+                            <source src="videos/Lesson2-1.webm" type="video/webm">
+                            <source src="videos/Lesson2-1.avi" type="video/avi">
+                    </div>
+
+                    <div class="item__video">
+                        <video preload="auto" autoplay muted loop class="video__item">
+                            <source src="videos/Lesson2.webm" type="video/webm">
+                            <source src="videos/Lesson2.avi" type="video/avi">
+                    </div>
+
+                    <div class="item__video">
+                        <video preload="auto" autoplay muted loop class="video__item">
+                            <source src="videos/Shapes.webm" type="video/webm">
+                            <source src="videos/Shapes.avi" type="video/avi">
+                    </div>
+
+                    <div class="item__video">
+                        <video preload="auto" autoplay muted loop class="video__item">
+                            <source src="videos/Why Fresh Air (720p).mp4" type="video/webm">
+                    </div>
+
+                    <div class="item__video">
+                        <video preload="auto" autoplay muted loop class="video__item">
+                            <source src="videos/Comics_compressed.mp4" type="video/webm">
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="page__section page__section_5">
+        <h2 class="page__subtitle">Contact me</h2>
+        <form action="submit" class="contact">
+            <input type="text" class="input-field" placeholder="Enter Name">
+            <input class="input-field" type="email" placeholder="Enter Email">
+            <textarea class="input-text input-field" placeholder="Your Comment"></textarea>
+            <input id="submit-btn" class="input-field" type="submit" value="Send">
+        </form>
+    </section>
+
+    </main>
+    </div>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/smooth-scrollbar@latest/dist/smooth-scrollbar.js"></script>
+
+    <script src="slider.js"></script>
+    <script src="gsap.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
